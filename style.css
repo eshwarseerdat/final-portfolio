@@ -1,3 +1,50 @@
+body {
+  background-color: #fef6d7;
+  max-width: 100%;
+  width: 100vw;
+}
+
+main {
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+header,
+footer {
+  background-color: #eee2a1;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-left: 5px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+header nav ul li {
+  margin-right: 5px;
+}
+
+#intro img {
+  border-radius: 1em;
+  display: flex;
+  margin: 0 auto;
+  width: 61%;
+  margin-top: 1em;
+}
 img {
   width: 100vw;
   max-width: 100%;
@@ -6,4 +53,81 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+#form {
+  margin-bottom: 10px;
+}
+
+#form label {
+  display: flex;
+  flex-direction: column;
+}
+
+#form button {
+  display: block;
+  border-radius: 0.3em;
+  padding: 2px 7px;
+}
+
+#form textarea {
+  height: 70px;
+  width: 80%;
+}
+
+#form input,
+#form textarea,
+#form button {
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 100vw;
+  max-width: 80%;
+  height: 70%;
+  border: 0;
+  border: 2px solid #fdedaf;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: baseline;
+  }
+
+  header nav ul li {
+    font-size: 1.1em;
+    margin-left: 10px;
+  }
+
+  header nav ul li:last-of-type {
+    margin-right: 15px;
+  }
+
+  #portfolio {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #intro {
+    display: flex;
+  }
+
+  #intro img {
+    width: 25%;
+    margin-right: 15px;
+  }
+
+  iframe {
+    height: 25em;
+    width: 50%;
+  }
 }
