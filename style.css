@@ -1,0 +1,9 @@
+img {
+  width: 100vw;
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
