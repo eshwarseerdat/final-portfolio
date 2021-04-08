@@ -51,11 +51,8 @@ img {
 }
 
 #portfolio a {
-  border: 1px solid #c2a840;
-  background-color: #dac057;
   display: block;
   width: fit-content;
-  padding: 1% 2%;
   margin: 2% 0;
 }
 
